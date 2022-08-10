@@ -1,4 +1,4 @@
-// Created by Javier Sevilla. All rights reseved.
+// Created by Bionic Ape. All rights reseved.
 
 #pragma once
 
