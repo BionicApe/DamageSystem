@@ -7,7 +7,7 @@
 
 bool UHealthWidget::Initialize()
 {
-	if (Super::Initialize())
+	if (Super::Initialize() && MasterMaterial)
 	{
 		MID = UMaterialInstanceDynamic::Create(MasterMaterial, this);
 		HealthBarImage->SetBrushFromMaterial(MID);
