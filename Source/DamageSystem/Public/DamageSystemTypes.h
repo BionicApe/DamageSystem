@@ -18,19 +18,19 @@ struct FActorKilled
 	float DamageTaken;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	AActor* Victim;
+	AActor* Victim = nullptr;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	UHealthComponent* VictimHealth;
+	UHealthComponent* VictimHealth = nullptr;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	AController* VictimController;
+	AController* VictimController = nullptr;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	AActor* Killer;
+	AActor* Killer = nullptr;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	AController* KillerController;
+	AController* KillerController = nullptr;
 
 };
 
@@ -43,18 +43,18 @@ struct FTakeDamageProperties
 	float DamageTaken;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	AActor* Victim;
+	AActor* Victim = nullptr;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	UHealthComponent* VictimHealth;
+	UHealthComponent* VictimHealth = nullptr;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	AController* VictimController;
+	AController* VictimController = nullptr;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	AActor* Killer;
+	AActor* Killer = nullptr;
 
 	UPROPERTY(Transient, BlueprintReadWrite, Category = DamageSystem)
-	AController* KillerController;
+	AController* KillerController = nullptr;
 
 };
